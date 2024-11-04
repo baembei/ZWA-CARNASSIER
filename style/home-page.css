@@ -1,0 +1,113 @@
+.main_page_discover {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    padding: 14vh 40vh;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 45%;
+}
+
+.discover img {
+    width: auto;
+    min-width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+
+}
+
+.label {
+    margin-top: 15px;
+}
+
+.label p, .label a {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.label p {
+    font-weight: bold;
+}
+
+.label a:hover {
+    color: #444444;
+}
+
+.product-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pre-fall img,
+.winter img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.fullscreen-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.section{
+    overflow: hidden;
+}
+
+.video-overlay, .home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+.video-overlay h2.collection, .home-overlay h2.collection {
+    font-size: 22px;
+}
+
+.discover-collection{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.discover-image{
+    width: 100%;
+    height: 100%;
+}

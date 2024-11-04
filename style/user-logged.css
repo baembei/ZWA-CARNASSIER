@@ -1,0 +1,76 @@
+.account-overview {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+
+.nepridumala{
+    display: flex;
+    max-width: 30%;
+    height: 85vh;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-links a,
+.nav-links p {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-links p{
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+
+
+.fall-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.account-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.collection-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.discover-link {
+    margin-top: 1vh;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.discover-link:hover {
+    color: gray;
+}

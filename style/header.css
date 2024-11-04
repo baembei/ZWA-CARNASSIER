@@ -1,0 +1,225 @@
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding: 0 10px;
+}
+
+.carnassier-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.carnassier-header h1{
+    font-size: 35px;
+    color: #000000;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+nav {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-left{
+    margin-right: 80px;
+}
+
+.nav-left li,
+.nav-right li {
+    padding: 5px 12px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-left li img,
+.nav-right li img {
+    margin-top: 4px;
+}
+
+.nav-left ul li a:hover,
+.nav-right ul li a:hover {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+.nav-right a{
+    text-decoration: none;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline 2px;
+}
+
+
+.search-image{
+    width: 14px;
+    height: 14px;
+}
+
+
+.cart-image{
+    width: 18px;
+    height: 15px;
+    margin-bottom: 2px;
+}
+
+
+.transparent-header {
+    background-color: transparent;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.transparent-header h1 {
+    color: white;
+}
+
+.transparent-header a {
+    color: white;
+}
+
+.transparent-header img {
+    filter: brightness(0) invert(1);
+}
+
+
+.transparent-header-black {
+    background-color: transparent;
+    color: black;
+    height: 10vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.transparent-header-black h1 {
+    color: black;
+}
+
+.transparent-header-black a {
+    color: black;
+}
+
+.transparent-header-black img {
+    filter: brightness(0);
+}
+
+.non-transparent-header {
+    background-color: white;
+    color: black;
+    height: 10vh;
+    display: flex;
+    align-items: stretch;
+
+}
+
+.non-transparent-header h1 {
+    color: black;
+
+}
+
+.non-transparent-header a {
+    color: black;
+}
+
+.non-transparent-header img {
+    filter: brightness(0);
+}
+
+/*
+FOR ALL HEADERS MAKE SURE DROPDOWN MENU (HIGHLIGHTS/MEN/WOMEN) HAS BLACK TEXT
+*/
+
+header .dropdown-content a {
+    color: black;
+}
+
+header .dropdown-content a:hover {
+    color: darkgray;
+}
+
+
+/*
+DROPDOWN MENU
+*/
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 30px 30px;
+    background-color: white;
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 60px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    opacity: 1;
+}
+
+
+.menu-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.dropdown-content p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover, .dropdown:hover {
+    color: darkgray;
+}
+
+.dropdown-categories{
+    font-weight: bold;
+}
+
+.dropdown-new-arrivals{
+    padding: 10px 0;
+}

@@ -1,0 +1,95 @@
+.create-account-container {
+    display: flex;
+    max-width: 2000px;
+    margin: 100px 60px 180px 60px;
+    text-transform: uppercase;
+}
+
+.form-section {
+    flex: 1;
+    padding: 0 50px 0 0;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*height: auto;*/
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.p-benefits {
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+.required-text {
+    font-size: 10px;
+    color: dimgray;
+    margin-bottom: 3px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.birth-date-group {
+    display: flex;
+    gap: 10px;
+}
+
+.birth-date-group select {
+    flex: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    cursor: pointer;
+}
+
+.privacy-text {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #777;
+}
+
+.privacy-text a {
+    color: #222;
+    text-decoration: underline;
+}
+
+.form-group-checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+select:invalid, select option[value=""], input::placeholder {
+    color: gray;
+}
+
+select option{
+    color: black;
+}
