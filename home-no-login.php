@@ -70,6 +70,9 @@
             const sections = document.querySelectorAll('.section');
             const header = document.querySelector('header');
 
+            // Threshold for touchpad scrolls
+            const scrollThreshold = 50;
+
             function smoothScrollToSection(index) {
                 if (isScrolling) return;
                 isScrolling = true;
@@ -100,14 +103,21 @@
                 }
             }
 
+            let lastDeltaY = 0;
+
             window.addEventListener('wheel', function(event) {
                 event.preventDefault();
 
-                if (event.deltaY > 0 && currentSectionIndex < sections.length - 1) {
+                const deltaY = event.deltaY;
+                if (Math.abs(deltaY) < scrollThreshold) return;
+
+                if (deltaY > 0 && currentSectionIndex < sections.length - 1) {
                     smoothScrollToSection(currentSectionIndex + 1);
-                } else if (event.deltaY < 0 && currentSectionIndex > 0) {
+                } else if (deltaY < 0 && currentSectionIndex > 0) {
                     smoothScrollToSection(currentSectionIndex - 1);
                 }
+
+                lastDeltaY = deltaY;
             }, { passive: false });
 
             window.addEventListener('keydown', function(event) {
